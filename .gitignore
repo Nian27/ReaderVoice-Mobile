@@ -1,0 +1,77 @@
+# ===== 绝不进入公开仓库的资产 =====
+# 第三方原始资产（RESEARCH_ONLY / LICENSE_UNKNOWN）
+research/third_party/
+research/private/
+
+# 书籍原文（版权）
+books_private/
+小说，训练/
+*.txt
+!requirements.txt
+!*.txt.md
+
+# 用户数据
+voice_private/
+**/reading_state.json
+**/character_overrides.json
+
+# ===== 模型与转换产物 =====
+models/
+checkpoints/
+*.mnn
+*.onnx
+*.npz
+*.raw
+*.safetensors
+*.pt
+*.bin
+*.so
+*.dll
+*.lib
+*.pyd
+*.jar
+*.aab
+
+# ===== 构建产物 =====
+*.apk
+.gradle/
+.idea/
+.kotlin/
+.mnemon/
+.jspace/
+build/
+**/build/
+.cxx/
+**/.cxx/
+captures/
+*.iml
+local.properties
+
+# ===== 运行产物 / 证据（体积大且可能含原文片段）=====
+runs/
+training/runs/
+training/readerdirector/dataset/
+training/readerdirector/.mscache/
+training/data_raw/
+training/data_gold/
+training/data_silver/
+training/data_hard/
+*.jsonl
+*.arrow
+*.parquet
+*.log
+
+# ===== 凭据 =====
+*.key
+*.pem
+*.jks
+.env
+.env.*
+secrets.json
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+site-packages/

@@ -1,0 +1,14 @@
+{
+ "speaker_v1": {
+  "file": "prompts/speaker_v1.txt",
+  "sha256": "3b85584179d82d4e50b4c5494130945cfeec9eb240b5a0fb42c2e441dc4f951a"
+ },
+ "identity_v1": {
+  "file": "prompts/identity_v1.txt",
+  "sha256": "ca6aaaf4fb1012f2d395f7b0d3345e93d7efdec54452f2b034c3b930fb018c65"
+ },
+ "voice_state_v1": {
+  "file": "prompts/voice_state_v1.txt",
+  "sha256": "938e176c9190846e630b963bcdf8593c2abdf97306a34924404d67b4dae43f2a"
+ }
+}

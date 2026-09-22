@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="false"
+        android:label="VoiceDesign"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <uses-native-library android:name="libcdsprpc.so" android:required="false" />
+        <uses-native-library android:name="libOpenCL.so" android:required="false" />
+        <service
+            android:name=".VoiceDesignService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+        <activity
+            android:name=".VoiceDesignActivity"
+            android:exported="true"
+            android:label="VoiceDesign">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

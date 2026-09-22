@@ -1,0 +1,33 @@
+{
+ "dataset_sha256": "a22899830e2b1b17446f2c7c251af63719fa38254bd1998342a40a78fa977615",
+ "test_sha256": "1bdb5d8fe570c7ca841f557826b01cf30f06f111e42d0eec3177245fef251ba6",
+ "locked_test": "training/readerdirector/dataset/test.jsonl",
+ "counts": {
+  "total": 38451,
+  "dev": 161,
+  "test": 81,
+  "train": 38209
+ },
+ "by_provenance": {
+  "EXPLICIT_RULE_GOLD": 1209,
+  "UNKNOWN": 37242
+ },
+ "by_task": {
+  "IDENTITY": 10889,
+  "SPEAKER": 13781,
+  "VOICE_STATE": 13781
+ },
+ "split": {
+  "dev": {
+   "6f6036dd774f61e799d7784a5965d350efeba60bf1e5b78b20dc364334751fbe": "fixture-A",
+   "27a246856662a8ad1fc6be2f1cf731e180e9a7abd0d4e8c64310d81461bbbd01": "fixture-B"
+  },
+  "test": {
+   "eedaa28e301c660532c668f430fa47b6b3c33c2d22859239573721d72d937827": "fixture-C"
+  },
+  "train": {
+   "6150b721cc8015a81faba949fbe86ec49d68997317a237ea9b53fc48692cf4b9": "PRIVATE_REALBOOK_001 娱乐：从1990年开始"
+  }
+ },
+ "note": "ENGINEERING baseline VALID / REAL-novel generalization OPEN；train 仅含真实书；dev/test 为合成 fixture（版权文本不入库）"
+}

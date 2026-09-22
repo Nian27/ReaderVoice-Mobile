@@ -1,0 +1,1639 @@
+{
+ "GLOBAL": [
+  "Number",
+  "String",
+  "addAlias",
+  "addPair",
+  "addPromotedAlias",
+  "aliasRefineShortLog",
+  "aliasShortLog",
+  "applyExceptionArray",
+  "applyExceptions",
+  "auditShortLog",
+  "buildVoiceAgeAuditPolicyPromptV907",
+  "buildVoiceAgeSparseAuditSchemaPrompt",
+  "cleanArr",
+  "cleanDialogText",
+  "collect",
+  "collectCompoundLines",
+  "collectExactCacheIndices",
+  "concurrentApiRequest",
+  "conflictShortLog",
+  "cooccurEvidenceText",
+  "createSingleRequestTask",
+  "encodeURIComponent",
+  "escapeRegExp",
+  "extendNextContentEndPos",
+  "extendPrevContentStartPos",
+  "extractAllTagsFromFayinren",
+  "extractByRegex",
+  "forceFlattenArray",
+  "generateBatchSeqContent",
+  "generateSingleTargetNameAnalysisBatch",
+  "getAvailableApiList",
+  "getCacheNarrationList",
+  "getV907CharacterNamingAndSpeakerRules",
+  "graphAddWeightedEdge",
+  "graphAliasBuildCandidateMap",
+  "graphAliasCheckReasonContradiction",
+  "graphAliasGetRecentIndices",
+  "graphAliasMarkLimit",
+  "graphAliasMergeBlockReason",
+  "graphAliasPairFocused",
+  "graphAliasRecentChapterAppend",
+  "graphAliasRecentChapterSave",
+  "graphAliasRecentValue",
+  "graphAnyReason",
+  "graphArrayIntersectsChapters",
+  "graphBookCacheFile",
+  "graphBookCacheSafeKey",
+  "graphBuildAdjacentDialogEvidence",
+  "graphBuildChapterKey",
+  "graphBuildCharacterRecordsSnapshot",
+  "graphBuildCompactRelationAuditItems",
+  "graphBuildEvidenceHash",
+  "graphBuildEvidenceHashText",
+  "graphBuildNameAnalysisCacheSnapshot",
+  "graphBuildNameAnalysisDialogueContextSnapshot",
+  "graphBuildRelationEvidenceMeta",
+  "graphBuildStableChapterKey",
+  "graphCanonicalRemoteEvent",
+  "graphCleanEvidenceSnippet",
+  "graphCleanSourceReasons",
+  "graphCnEventName",
+  "graphCollectClosureNeighbors",
+  "graphCompoundEvidenceText",
+  "graphCooccurMarkChapter",
+  "graphCurrentChapterId",
+  "graphEnsureRelationEvidenceMeta",
+  "graphEscapeRegExp",
+  "graphEvidenceNormalizeText",
+  "graphFilterRecentEvidence",
+  "graphFilteredRecentChapters",
+  "graphGateShouldApplyToPositiveReason",
+  "graphGetEdgeReasons",
+  "graphGetEdgeScore",
+  "graphGetEdgeSnapshot",
+  "graphGetPairStats",
+  "graphHasDirectPairEvidenceText",
+  "graphHash",
+  "graphIdentitySubstitutionType",
+  "graphIsAliasGroupName",
+  "graphIsInvalidName",
+  "graphIsPositiveClosureReason",
+  "graphIsRelationAuditComplete",
+  "graphIsRelationDescriptorName",
+  "graphIsWhitelistedNameVariant",
+  "graphMarkChapterEvidenceOnce",
+  "graphNameReuseExtractAliases",
+  "graphNameReuseFindRecordMatchInText",
+  "graphNameReuseIsGenericCrossMainName",
+  "graphNameReuseIsWeakCrossAlias",
+  "graphNameReuseRecordChapters",
+  "graphNameReuseRecordName",
+  "graphNormalizeAuditDecision",
+  "graphNormalizeEvidenceFamily",
+  "graphNormalizeEvidenceSubtype",
+  "graphNormalizeModelRelationType",
+  "graphNormalizeName",
+  "graphNormalizeSparseRelationAuditResult",
+  "graphNormalizeStateAliasName",
+  "graphNormalizeVerifiedRelation",
+  "graphNowIso",
+  "graphPairHasStrictPositive",
+  "graphPairKey",
+  "graphParseJsonObject",
+  "graphPrecheckModelRelationShape",
+  "graphPruneScans",
+  "graphPushChapterMark",
+  "graphPushCooccurEvidence",
+  "graphReadJsonSafe",
+  "graphReasonHasBridgeRisk",
+  "graphReasonListHas",
+  "graphReasonStartsWith",
+  "graphRelationAuditBuildAcceptAudits",
+  "graphRelationAuditCandidateSetId",
+  "graphRelationAuditExpectedInfo",
+  "graphRelationAuditReadRelationId",
+  "graphRelationDescriptorBlockReason",
+  "graphRelationReasonFromFamily",
+  "graphRemoteCoalesceKey",
+  "graphRemoteLog",
+  "graphRemoteSetChapter",
+  "graphRemoveEdge",
+  "graphRuleDataVersion",
+  "graphSafeString",
+  "graphSetCurrentChapterKey",
+  "graphShortLog",
+  "graphSpecialSpeakerType",
+  "graphSplitAliases",
+  "graphTrimChapterArray",
+  "graphV87CertifiedCompoundDifferent",
+  "graphV87CertifiedCompoundSame",
+  "graphV87CompoundSourceStrongEnough",
+  "graphV87EvidenceLooksLikeModelSummary",
+  "graphV87ExtractCompoundSourceReasons",
+  "graphV87NegativeReasonCanSplit",
+  "graphV87OldHasDirectPairEvidenceText",
+  "graphV87PositiveReasonCanMerge",
+  "graphV87ReasonsHasAny",
+  "graphV87SourceFamilies",
+  "graphV907AliasFinalDecisionStatus",
+  "graphV907AliasList",
+  "graphV907AliasObservePayload",
+  "graphV907ApplyGengxinPayloadToManager",
+  "graphV907ApplyVoiceAgeConflictGuard",
+  "graphV907ArrayUniqueSorted",
+  "graphV907BuildCombinedAuditStatus",
+  "graphV907BuildCombinedSharedSourceBlock",
+  "graphV907BuildGengxinBookSwitchPayload",
+  "graphV907BuildRecordIndex",
+  "graphV907ChapterList",
+  "graphV907Clone",
+  "graphV907CollectCompoundSemanticEvidenceKeys",
+  "graphV907CollectNameIdentitySubtypeInfo",
+  "graphV907CollectPersistentCompoundPairs",
+  "graphV907CombinedMaxRetryRound",
+  "graphV907CombinedStatusLogPayload",
+  "graphV907CompoundContributionMarkKey",
+  "graphV907CompoundReconcileSignature",
+  "graphV907CompoundSignature",
+  "graphV907CountEmptyChapters",
+  "graphV907CurrentBookKey",
+  "graphV907ExpandVoiceAgeEvidenceForSeqV907",
+  "graphV907FilterCompoundSourceReasonsBeforeScan",
+  "graphV907FindRecordByIdOrName",
+  "graphV907FixedVoiceTagOfRecord",
+  "graphV907HasOwn",
+  "graphV907IsFixedVoiceRecord",
+  "graphV907IsSequentialChapterIndex",
+  "graphV907JsonClone",
+  "graphV907LogVoiceAgeSparseApply",
+  "graphV907MarkFixedVoiceRecord",
+  "graphV907MarkReconcileSignature",
+  "graphV907MergeOneExternalRecord",
+  "graphV907NameIdentitySubtypeDecision",
+  "graphV907NameIdentitySubtypeLevel",
+  "graphV907NewVoiceAgeEvidenceCache",
+  "graphV907NewVoiceAgeSparseApplySummary",
+  "graphV907NormalizeAgeForVoice",
+  "graphV907NormalizeAliasModule",
+  "graphV907NormalizeAnchorText",
+  "graphV907NormalizeGenderForVoice",
+  "graphV907NormalizeGraphModule",
+  "graphV907NormalizeVoiceAgeAuditResult",
+  "graphV907NormalizeVoiceAgeModule",
+  "graphV907NormalizeVoiceAgeStage",
+  "graphV907NormalizeVoiceAssignGenderAge",
+  "graphV907NotApplicableModule",
+  "graphV907ParseGengxinPayload",
+  "graphV907PositiveCompoundRecordReasons",
+  "graphV907PositiveSubtypeCompoundReasons",
+  "graphV907ReconcileSignatureSeen",
+  "graphV907RecordName",
+  "graphV907SameStringSet",
+  "graphV907SampleSemanticContributionKey",
+  "graphV907SampleSemanticReason",
+  "graphV907SelectBestCombinedResult",
+  "graphV907SubjectMatches",
+  "graphV907TextContainsAnchor",
+  "graphV907UniqueStringArray",
+  "graphV907VoiceAgeCandidateSetId",
+  "graphV907VoiceAgePriority",
+  "graphV907VoiceAgeScheduleSeqsV907",
+  "graphV907VoiceInfoByTag",
+  "graphV907VoiceSegmentFromVoice",
+  "graphV907VoiceSegmentKey",
+  "graphV907VoiceSegmentOfRecord",
+  "graphWriteJsonSafe",
+  "isArray",
+  "isNaN",
+  "isSingleKeywordRepeat",
+  "mapNameAnalysisDialoguesToBlocks",
+  "matchDialogFromCache",
+  "matchNarrationFromCache",
+  "matchSingleLine",
+  "normalizeModelRelationList",
+  "normalizeNameAnalysisCacheMatchText",
+  "normalizeNameAnalysisDialogueText",
+  "padZero",
+  "parseInt",
+  "parseNameAnalysisOuterQuoteBlocks",
+  "pushAlias",
+  "readDialogCache",
+  "reasonText",
+  "requestBuilder",
+  "responseParser",
+  "saveIndex",
+  "semanticShortLog",
+  "sleep",
+  "splitDialogByLine",
+  "tryAdd",
+  "v87BookKeyOfManager",
+  "v87EnsureMergedRecordsBook",
+  "v87EnsureRecordId",
+  "v87EvidenceLooksModelSummaryOnly",
+  "v87FindBoundMergeBackup",
+  "v87NormalizeAuditSuggestions",
+  "v87SplitAliasesString",
+  "validateNameAnalyzeBatchResult",
+  "voteAliasAnalyzeResult",
+  "voteAliasRefineResult",
+  "voteNameAnalyzeResult",
+  "weight",
+  "writeDialogCache"
+ ],
+ "loadIndex": [
+  "isNaN",
+  "parseInt"
+ ],
+ "fillApiListToMinCount": [
+  "parseInt"
+ ],
+ "loadKeyFile": [
+  "fillApiListToMinCount",
+  "loadIndex",
+  "parseSingleGroup",
+  "saveIndex"
+ ],
+ "getAvailableApiList": [
+  "loadKeyFile",
+  "saveIndex"
+ ],
+ "getNextNameAnalyzeKey": [
+  "getAvailableApiList"
+ ],
+ "getNextAliasAnalyzeKey": [
+  "getAvailableApiList"
+ ],
+ "concurrentApiRequest": [
+  "createSingleRequestTask",
+  "isNaN",
+  "parseInt",
+  "requestBuilder",
+  "responseParser"
+ ],
+ "createSingleRequestTask": [
+  "requestBuilder",
+  "responseParser"
+ ],
+ "graphNormalizeModelRelationType": [
+  "graphSafeString"
+ ],
+ "graphNormalizeEvidenceFamily": [
+  "graphNormalizeModelRelationType",
+  "graphSafeString"
+ ],
+ "graphNormalizeEvidenceSubtype": [
+  "graphSafeString"
+ ],
+ "graphEvidenceNormalizeText": [
+  "graphSafeString"
+ ],
+ "graphRelationReasonFromFamily": [
+  "graphNormalizeEvidenceFamily",
+  "graphNormalizeModelRelationType"
+ ],
+ "graphNormalizeAuditDecision": [
+  "graphSafeString"
+ ],
+ "graphPrecheckModelRelationShape": [
+  "Number",
+  "graphNormalizeEvidenceFamily",
+  "graphNormalizeEvidenceSubtype",
+  "graphNormalizeModelRelationType",
+  "graphNormalizeName",
+  "graphRelationReasonFromFamily",
+  "graphSafeString"
+ ],
+ "graphV907IsFirstPersonOrHonorificTitleName": [
+  "graphNormalizeName"
+ ],
+ "normalizeModelRelationList": [
+  "Number",
+  "graphNormalizeEvidenceFamily",
+  "graphNormalizeEvidenceSubtype",
+  "graphNormalizeModelRelationType",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "voteModelRelations": [
+  "Number",
+  "String",
+  "graphEvidenceNormalizeText",
+  "graphPairKey",
+  "normalizeModelRelationList"
+ ],
+ "voteVoiceAgeEvidence": [
+  "Number",
+  "graphHash",
+  "graphNormalizeName",
+  "graphSafeString",
+  "parseInt"
+ ],
+ "voteTemporaryVoiceStateReview": [
+  "Number",
+  "graphSafeString"
+ ],
+ "voteNameAnalyzeResult": [
+  "graphNormalizeName",
+  "graphShortLog",
+  "parseInt",
+  "semanticShortLog",
+  "voteModelRelations",
+  "voteTemporaryVoiceStateReview",
+  "voteVoiceAgeEvidence"
+ ],
+ "voteAliasAnalyzeResult": [
+  "graphNormalizeName"
+ ],
+ "isSingleKeywordRepeat": [
+  "escapeRegExp"
+ ],
+ "CharacterManager": [
+  "graphBookCacheFile",
+  "graphRuleDataVersion"
+ ],
+ "graphAliasMarkLimit": [
+  "isNaN",
+  "parseInt"
+ ],
+ "graphAliasRecentChapterSafeKey": [
+  "graphBookCacheSafeKey"
+ ],
+ "graphAliasRecentChapterLoad": [
+  "graphAliasRecentChapterSafeKey",
+  "graphReadJsonSafe"
+ ],
+ "graphAliasRecentChapterAppend": [
+  "graphAliasMarkLimit",
+  "graphAliasRecentChapterLoad",
+  "graphSafeString"
+ ],
+ "graphAliasRecentChapterSave": [
+  "graphAliasRecentChapterSafeKey",
+  "graphNowIso"
+ ],
+ "graphAliasGetRecentIndices": [
+  "Number",
+  "String",
+  "graphAliasRecentChapterLoad",
+  "isNaN",
+  "parseInt"
+ ],
+ "graphTrimChapterArray": [
+  "graphAliasMarkLimit",
+  "graphSafeString"
+ ],
+ "graphPushChapterMark": [
+  "graphCurrentChapterId",
+  "graphTrimChapterArray"
+ ],
+ "graphCleanEvidenceSnippet": [
+  "graphAliasRecentValue",
+  "graphSafeString",
+  "isNaN",
+  "parseInt"
+ ],
+ "graphBuildAdjacentDialogEvidence": [
+  "graphCleanEvidenceSnippet",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphPushCooccurEvidence": [
+  "graphAliasRecentValue",
+  "graphCleanEvidenceSnippet",
+  "graphCurrentChapterId",
+  "graphGetPairStats",
+  "graphNowIso",
+  "graphSafeString",
+  "isNaN",
+  "parseInt"
+ ],
+ "graphFilterRecentEvidence": [
+  "graphAliasRecentValue",
+  "graphCleanEvidenceSnippet",
+  "graphSafeString",
+  "isNaN",
+  "parseInt"
+ ],
+ "graphSafeString": [
+  "String"
+ ],
+ "graphShortLog": [
+  "graphSafeString"
+ ],
+ "aliasShortLog": [
+  "graphSafeString"
+ ],
+ "semanticShortLog": [
+  "graphSafeString"
+ ],
+ "auditShortLog": [
+  "graphSafeString"
+ ],
+ "conflictShortLog": [
+  "graphSafeString"
+ ],
+ "aliasRefineShortLog": [
+  "graphSafeString"
+ ],
+ "graphCnEventName": [
+  "graphEventName"
+ ],
+ "graphCanonicalRemoteEvent": [
+  "graphSafeString"
+ ],
+ "graphRemoteCoalesceKey": [
+  "graphHash",
+  "graphSafeString"
+ ],
+ "graphRemoteRebuildCoalesceIndex": [
+  "graphRemoteCoalesceKey",
+  "graphRemoteShouldCoalesce"
+ ],
+ "graphRemoteEnsureLoaded": [
+  "graphReadJsonSafe",
+  "graphRemoteRebuildCoalesceIndex"
+ ],
+ "graphRemoteWriteLocal": [
+  "graphNowIso",
+  "graphWriteJsonSafe"
+ ],
+ "graphBookCacheSafeKey": [
+  "graphHash",
+  "graphSafeString"
+ ],
+ "graphRuleDataVersion": [
+  "String"
+ ],
+ "graphBookCacheFile": [
+  "graphBookCacheSafeKey",
+  "graphRuleDataVersion"
+ ],
+ "graphBuildStableChapterKey": [
+  "graphHash",
+  "graphSafeString"
+ ],
+ "graphFlushDanglingPendingNameSemanticRelations": [
+  "String",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "graphV907IsSequentialChapterIndex": [
+  "Number",
+  "String",
+  "isFinite"
+ ],
+ "graphSetCurrentChapterKey": [
+  "String",
+  "graphAliasRecentChapterAppend",
+  "graphAliasRecentChapterSave",
+  "graphBuildStableChapterKey",
+  "graphFlushDanglingPendingNameSemanticRelations",
+  "graphNowIso",
+  "graphRemoteEnsureLoaded",
+  "graphRemoteFlushChapter",
+  "graphRemoteLog",
+  "graphRemoteWriteLocal",
+  "graphSafeString",
+  "graphV907IsSequentialChapterIndex"
+ ],
+ "graphRemoteSetChapter": [
+  "graphBuildChapterKey",
+  "graphRemoteEnabled",
+  "graphRemoteEnsureLoaded",
+  "graphRemoteWriteLocal",
+  "graphSafeString"
+ ],
+ "graphRemoteLog": [
+  "Number",
+  "graphCanonicalRemoteEvent",
+  "graphCnEventName",
+  "graphNowIso",
+  "graphRemoteCoalesceKey",
+  "graphRemoteEnabled",
+  "graphRemoteEnsureLoaded",
+  "graphRemoteRebuildCoalesceIndex",
+  "graphRemoteShouldCoalesce",
+  "graphRemoteWriteLocal"
+ ],
+ "graphBuildCharacterRecordsSnapshot": [
+  "Number",
+  "graphCnEventName",
+  "graphNormalizeName",
+  "graphNowIso",
+  "graphSafeString"
+ ],
+ "graphRemoteFlushChapter": [
+  "graphBuildCharacterRecordsSnapshot",
+  "graphCnEventName",
+  "graphNowIso",
+  "graphRemoteEnabled",
+  "graphRemoteEnsureLoaded",
+  "graphRemoteWriteLocal",
+  "graphShortLog",
+  "runner"
+ ],
+ "runner": [
+  "graphCnEventName",
+  "graphNowIso"
+ ],
+ "graphReadJsonSafe": [
+  "String"
+ ],
+ "graphNormalizeName": [
+  "graphSafeString"
+ ],
+ "graphNormalizeStateAliasName": [
+  "graphNormalizeName"
+ ],
+ "graphIsGroupName": [
+  "graphNormalizeName"
+ ],
+ "graphIsAliasGroupName": [
+  "graphIsGroupName",
+  "graphNormalizeName"
+ ],
+ "graphAliasMergeBlockReason": [
+  "graphIsAliasGroupName",
+  "graphNormalizeName"
+ ],
+ "graphV907AliasFinalDecisionStatus": [
+  "graphSafeString"
+ ],
+ "graphV907AliasObservePayload": [
+  "graphCurrentChapterId",
+  "graphSafeString",
+  "graphV907AliasFinalDecisionStatus"
+ ],
+ "graphSpecialSpeakerType": [
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphPairExplicitContradiction": [
+  "graphEscapeRegExp",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphAliasCheckReasonContradiction": [
+  "graphNormalizeName",
+  "graphPairExplicitContradiction",
+  "graphSafeString"
+ ],
+ "graphHasDirectPairEvidenceText": [
+  "graphEscapeRegExp",
+  "graphIdentitySubstitutionType",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphNormalizeVariantForGate": [
+  "graphNormalizeName"
+ ],
+ "graphIsWhitelistedNameVariant": [
+  "graphNormalizeName",
+  "graphNormalizeVariantForGate"
+ ],
+ "graphGateShouldApplyToPositiveReason": [
+  "graphSafeString"
+ ],
+ "graphReasonHasBridgeRisk": [
+  "graphSafeString"
+ ],
+ "graphStrictPositiveReasons": [
+  "graphSafeString"
+ ],
+ "graphPairHasStrictPositive": [
+  "Number",
+  "graphGetEdgeSnapshot",
+  "graphStrictPositiveReasons"
+ ],
+ "graphIsRelationDescriptorName": [
+  "graphNormalizeName"
+ ],
+ "graphRelationDescriptorBlockReason": [
+  "graphIsRelationDescriptorName"
+ ],
+ "graphIsInvalidName": [
+  "graphIsGroupName",
+  "graphNormalizeName"
+ ],
+ "graphEscapeRegExp": [
+  "graphSafeString"
+ ],
+ "graphHash": [
+  "String",
+  "graphSafeString"
+ ],
+ "graphPairKey": [
+  "graphNormalizeName"
+ ],
+ "graphSplitAliases": [
+  "addOne",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "addOne": [
+  "graphNormalizeName"
+ ],
+ "graphAddWeightedEdge": [
+  "Number",
+  "graphCurrentChapterId",
+  "graphNormalizeName",
+  "graphNowIso",
+  "graphPushChapterMark",
+  "graphSafeString",
+  "update"
+ ],
+ "update": [
+  "Number",
+  "graphCurrentChapterId",
+  "graphNowIso",
+  "graphPushChapterMark",
+  "graphSafeString"
+ ],
+ "graphGetEdgeScore": [
+  "Number",
+  "graphNormalizeName"
+ ],
+ "graphGetEdgeReasons": [
+  "graphNormalizeName"
+ ],
+ "graphGetEdgeSnapshot": [
+  "Number",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphRemoveEdge": [
+  "graphNormalizeName"
+ ],
+ "graphParseJsonObject": [
+  "graphSafeString"
+ ],
+ "graphNormalizeVerifiedRelation": [
+  "graphSafeString"
+ ],
+ "graphCooccurMarkChapter": [
+  "graphNormalizeName",
+  "graphPairKey",
+  "graphPushChapterMark"
+ ],
+ "graphGetPairStats": [
+  "graphIsGroupName",
+  "graphNormalizeName",
+  "graphPairKey"
+ ],
+ "graphCurrentChapterId": [
+  "graphSafeString"
+ ],
+ "graphPruneSeenMap": [
+  "String",
+  "parseInt"
+ ],
+ "graphBuildEvidenceHashText": [
+  "graphEvidenceNormalizeText"
+ ],
+ "graphBuildEvidenceHash": [
+  "graphBuildEvidenceHashText",
+  "graphHash"
+ ],
+ "graphBuildRelationEvidenceMeta": [
+  "graphBuildEvidenceHash",
+  "graphCurrentChapterId",
+  "graphPairKey",
+  "graphRelationReasonFromFamily",
+  "graphSafeString"
+ ],
+ "graphEnsureRelationEvidenceMeta": [
+  "graphBuildRelationEvidenceMeta"
+ ],
+ "graphMarkChapterEvidenceOnce": [
+  "graphBuildEvidenceHash",
+  "graphCurrentChapterId",
+  "graphNormalizeName",
+  "graphNowIso",
+  "graphPairKey",
+  "graphPruneSeenMap",
+  "graphSafeString"
+ ],
+ "graphIsPositiveClosureReason": [
+  "graphSafeString"
+ ],
+ "graphEdgeHasClosureReason": [
+  "graphIsNegativeClosureReason",
+  "graphIsPositiveClosureReason"
+ ],
+ "graphCollectClosureNeighbors": [
+  "graphEdgeHasClosureReason",
+  "graphIsInvalidName",
+  "graphIsRelationDescriptorName",
+  "graphNormalizeName",
+  "parseInt"
+ ],
+ "graphPruneScans": [
+  "String"
+ ],
+ "tryAdd": [
+  "graphAddWeightedEdge",
+  "graphGetEdgeReasons",
+  "graphGetEdgeScore",
+  "graphGetEdgeSnapshot",
+  "graphIsInvalidName",
+  "graphIsRelationDescriptorName",
+  "graphMarkChapterEvidenceOnce",
+  "graphNormalizeName",
+  "graphNowIso",
+  "graphPairKey",
+  "graphPruneSeenMap",
+  "graphReasonListHas",
+  "graphRemoteLog",
+  "graphStrictPositiveReasons"
+ ],
+ "graphBuildCompactRelationAuditItems": [
+  "graphCurrentChapterId",
+  "graphSafeString"
+ ],
+ "graphRelationAuditCandidateSetId": [
+  "graphBuildCompactRelationAuditItems",
+  "graphHash",
+  "graphSafeString"
+ ],
+ "graphBuildRelationAuditCompleteness": [
+  "graphSafeString"
+ ],
+ "graphIsRelationAuditComplete": [
+  "graphBuildRelationAuditCompleteness"
+ ],
+ "graphRelationAuditExpectedInfo": [
+  "graphSafeString"
+ ],
+ "graphRelationAuditIsAllAcceptedMarker": [
+  "String",
+  "graphSafeString"
+ ],
+ "graphRelationAuditReadRelationId": [
+  "String",
+  "graphSafeString"
+ ],
+ "graphRelationAuditBuildAcceptAudits": [
+  "graphSafeString"
+ ],
+ "graphNormalizeSparseRelationAuditResult": [
+  "Number",
+  "applyExceptionArray",
+  "fail",
+  "graphRelationAuditAllAcceptedVerificationOk",
+  "graphRelationAuditBuildAcceptAudits",
+  "graphRelationAuditCandidateSetId",
+  "graphRelationAuditExpectedInfo",
+  "graphRelationAuditIsAllAcceptedMarker",
+  "graphRelationAuditReadRelationId",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "applyExceptionArray": [
+  "graphRelationAuditReadRelationId",
+  "graphSafeString"
+ ],
+ "buildAuditRequest": [
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "parseAuditResponse": [
+  "String",
+  "graphNormalizeSparseRelationAuditResult",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "graphReasonStartsWith": [
+  "String"
+ ],
+ "graphAnyReason": [
+  "graphReasonListHas"
+ ],
+ "graphCleanSourceReasons": [
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "graphV907IsForbiddenCompoundSourceReason": [
+  "graphSafeString"
+ ],
+ "graphV907FilterCompoundSourceReasonsBeforeScan": [
+  "Number",
+  "graphSafeString",
+  "graphV907IsForbiddenCompoundSourceReason"
+ ],
+ "graphCompoundEvidenceIsDirty": [
+  "graphSafeString"
+ ],
+ "graphCompoundChapterMarkOnce": [
+  "graphSafeString"
+ ],
+ "graphCompoundEvidenceText": [
+  "graphCompoundEvidenceIsDirty",
+  "graphFilterRecentEvidence",
+  "graphSafeString"
+ ],
+ "graphV907ArrayUniqueSorted": [
+  "graphSafeString"
+ ],
+ "graphV907CollectGraphPairs": [
+  "graphV907AddCompoundPair",
+  "graphV907FilterCompoundSourceReasonsBeforeScan"
+ ],
+ "graphV907AddCompoundPair": [
+  "graphIsGroupName",
+  "graphIsInvalidName",
+  "graphNormalizeName",
+  "graphPairKey"
+ ],
+ "graphV907CollectPersistentCompoundPairs": [
+  "graphCurrentChapterId",
+  "graphV907AddCompoundPair",
+  "graphV907CollectGraphPairs"
+ ],
+ "graphV907NameIdentitySubtypeLevel": [
+  "graphNormalizeEvidenceSubtype"
+ ],
+ "graphV907CollectNameIdentitySubtypeInfo": [
+  "Number",
+  "addSample",
+  "graphNormalizeEvidenceSubtype",
+  "graphSafeString",
+  "graphV907ArrayUniqueSorted",
+  "graphV907NameIdentitySubtypeLevel"
+ ],
+ "addSample": [
+  "Number",
+  "graphNormalizeEvidenceSubtype",
+  "graphSafeString",
+  "graphV907NameIdentitySubtypeLevel",
+  "graphV907SampleSemanticContributionKey",
+  "graphV907SampleSemanticReason"
+ ],
+ "graphV907NameIdentitySubtypeDecision": [
+  "Number"
+ ],
+ "graphV907CompoundSignature": [
+  "graphHash",
+  "graphV907ArrayUniqueSorted"
+ ],
+ "graphV907IsCompoundReasonName": [
+  "graphSafeString"
+ ],
+ "graphV907IsSemanticCompoundSourceReason": [
+  "graphSafeString",
+  "graphV907IsCompoundReasonName"
+ ],
+ "graphV907SampleSemanticReason": [
+  "graphSafeString"
+ ],
+ "graphV907SampleSemanticContributionKey": [
+  "graphBuildEvidenceHash",
+  "graphCurrentChapterId",
+  "graphSafeString",
+  "graphV907IsSemanticCompoundSourceReason",
+  "graphV907SampleSemanticReason"
+ ],
+ "graphV907CollectCompoundSemanticEvidenceKeys": [
+  "addEdge",
+  "addSample",
+  "graphCleanSourceReasons",
+  "graphV907ArrayUniqueSorted",
+  "graphV907IsSemanticCompoundSourceReason",
+  "graphV907SampleSemanticContributionKey",
+  "graphV907SampleSemanticReason"
+ ],
+ "addEdge": [
+  "addSample"
+ ],
+ "graphV907CompoundContributionMarkKey": [
+  "graphSafeString"
+ ],
+ "graphV907CompoundHasNewSemanticContribution": [
+  "graphV907CompoundContributionMarkKey"
+ ],
+ "graphV907MarkCompoundSemanticContribution": [
+  "graphV907CompoundContributionMarkKey"
+ ],
+ "graphV907CompoundReconcileSignature": [
+  "graphHash",
+  "graphSafeString",
+  "graphV907ArrayUniqueSorted"
+ ],
+ "writeNeg": [
+  "Number",
+  "graphCompoundChapterMarkOnce",
+  "graphPushCooccurEvidence",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphShortLog",
+  "graphV907CollectCompoundSemanticEvidenceKeys",
+  "graphV907CompoundHasNewSemanticContribution",
+  "graphV907CompoundSignature",
+  "graphV907CompoundSignatureSeen",
+  "graphV907FilterCompoundSourceReasonsBeforeScan",
+  "graphV907MarkCompoundSemanticContribution",
+  "graphV907MarkCompoundSignature"
+ ],
+ "writePos": [
+  "Number",
+  "graphCompoundChapterMarkOnce",
+  "graphPushCooccurEvidence",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphShortLog",
+  "graphV907ArrayUniqueSorted",
+  "graphV907CollectCompoundSemanticEvidenceKeys",
+  "graphV907CompoundHasNewSemanticContribution",
+  "graphV907CompoundSignature",
+  "graphV907CompoundSignatureSeen",
+  "graphV907FilterCompoundSourceReasonsBeforeScan",
+  "graphV907MarkCompoundSemanticContribution",
+  "graphV907MarkCompoundSignature"
+ ],
+ "writeHint": [
+  "Number",
+  "graphPushCooccurEvidence",
+  "graphRemoteLog",
+  "graphShortLog",
+  "graphV907ArrayUniqueSorted",
+  "graphV907CompoundHasNewSemanticContribution",
+  "graphV907CompoundSignature",
+  "graphV907CompoundSignatureSeen",
+  "graphV907MarkCompoundSemanticContribution",
+  "graphV907MarkCompoundSignature"
+ ],
+ "addPair": [
+  "graphIsGroupName",
+  "graphIsInvalidName",
+  "graphNormalizeName",
+  "graphPairKey"
+ ],
+ "addScanEdgeOnce": [
+  "graphPairKey",
+  "graphSafeString"
+ ],
+ "remoteGraphEdgeLog": [
+  "graphRemoteLog"
+ ],
+ "addPos": [
+  "addScanEdgeOnce",
+  "graphAddWeightedEdge",
+  "graphCurrentChapterId",
+  "graphGateShouldApplyToPositiveReason",
+  "graphMarkChapterEvidenceOnce",
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString",
+  "remoteGraphEdgeLog"
+ ],
+ "addNeg": [
+  "addScanEdgeOnce",
+  "graphAddWeightedEdge",
+  "graphCurrentChapterId",
+  "graphMarkChapterEvidenceOnce",
+  "graphSafeString",
+  "remoteGraphEdgeLog"
+ ],
+ "graphAliasBuildCandidateMap": [
+  "add",
+  "graphNormalizeName"
+ ],
+ "add": [
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphAliasPairFocused": [
+  "graphNormalizeName"
+ ],
+ "graphNameReuseRecordName": [
+  "graphNormalizeName"
+ ],
+ "graphNameReuseExtractAliases": [
+  "String",
+  "graphNameReuseRecordName",
+  "graphNormalizeName",
+  "parseInt",
+  "pushOne"
+ ],
+ "pushOne": [
+  "graphNormalizeName"
+ ],
+ "graphNameReuseIsWeakCrossAlias": [
+  "graphNormalizeName",
+  "graphV907IsFirstPersonOrHonorificTitleName"
+ ],
+ "graphNameReuseIsGenericCrossMainName": [
+  "graphNameReuseIsWeakCrossAlias",
+  "graphNormalizeName"
+ ],
+ "graphNameReuseFindRecordMatchInText": [
+  "String",
+  "graphNameReuseExtractAliases",
+  "graphNameReuseIsWeakCrossAlias",
+  "graphNameReuseRecordName",
+  "graphNormalizeName"
+ ],
+ "graphNameReuseRecordChapters": [
+  "graphTrimChapterArray"
+ ],
+ "collect": [
+  "Number",
+  "graphAliasPairFocused",
+  "graphAliasRecentValue",
+  "graphArrayIntersectsChapters",
+  "graphFilteredRecentChapters",
+  "graphIsInvalidName",
+  "graphPairKey",
+  "graphSafeString",
+  "parseInt"
+ ],
+ "collectCompoundLines": [
+  "Number",
+  "String"
+ ],
+ "addAlias": [
+  "graphNormalizeName"
+ ],
+ "validateNameAnalyzeBatchResult": [
+  "String"
+ ],
+ "buildNameAnalyzeRequest": [
+  "String",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "parseNameAnalyzeResponse": [
+  "String",
+  "graphRemoteLog",
+  "graphSafeString",
+  "validateNameAnalyzeBatchResult"
+ ],
+ "buildAliasAnalyzeRequest": [
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "parseAliasAnalyzeResponse": [
+  "String",
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "reasonText": [
+  "graphSafeString"
+ ],
+ "cooccurEvidenceText": [
+  "graphFilterRecentEvidence",
+  "graphSafeString"
+ ],
+ "buildAliasRefineRequest": [
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "parseAliasRefineResponse": [
+  "String",
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "pushAlias": [
+  "graphAliasMergeBlockReason",
+  "graphNormalizeName",
+  "graphNormalizeStateAliasName",
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "addPromotedAlias": [
+  "graphNormalizeName"
+ ],
+ "getCacheNarrationList": [
+  "readDialogCache"
+ ],
+ "readDialogCache": [
+  "graphSafeString"
+ ],
+ "matchSingleLine": [
+  "cleanDialogText",
+  "splitDialogByLine"
+ ],
+ "matchNarrationFromCache": [
+  "cleanDialogText",
+  "getValidLineCount",
+  "isLineMatchExact",
+  "readDialogCache",
+  "tryMatchEntry",
+  "writeDialogCache"
+ ],
+ "isLineMatchExact": [
+  "cleanDialogText"
+ ],
+ "tryMatchEntry": [
+  "getValidLineCount",
+  "isLineMatchExact"
+ ],
+ "extendNextContentEndPos": [
+  "isNaN",
+  "parseInt"
+ ],
+ "normalizeNameAnalysisDialogueText": [
+  "String"
+ ],
+ "normalizeNameAnalysisCacheMatchText": [
+  "String"
+ ],
+ "graphBuildNameAnalysisBlockSnapshot": [
+  "Number",
+  "String",
+  "graphHash",
+  "graphSafeString",
+  "normalizeNameAnalysisCacheMatchText",
+  "padZero"
+ ],
+ "graphBuildNameAnalysisCacheSnapshot": [
+  "String",
+  "graphHash",
+  "graphNormalizeName",
+  "graphSafeString",
+  "normalizeNameAnalysisCacheMatchText",
+  "padZero"
+ ],
+ "graphBuildNameAnalysisDialogueContextSnapshot": [
+  "Number",
+  "String",
+  "graphHash",
+  "graphSafeString",
+  "normalizeNameAnalysisCacheMatchText"
+ ],
+ "repairNameAnalysisBatchText": [
+  "String"
+ ],
+ "parseNameAnalysisOuterQuoteBlocks": [
+  "normalizeNameAnalysisDialogueText"
+ ],
+ "mapNameAnalysisDialoguesToBlocks": [
+  "String",
+  "normalizeNameAnalysisDialogueText"
+ ],
+ "generateBatchSeqContent": [
+  "String",
+  "mapNameAnalysisDialoguesToBlocks",
+  "padZero",
+  "parseNameAnalysisOuterQuoteBlocks",
+  "repairNameAnalysisBatchText"
+ ],
+ "generateSingleTargetNameAnalysisBatch": [
+  "String",
+  "normalizeNameAnalysisDialogueText"
+ ],
+ "matchDialogFromCache": [
+  "String",
+  "collectExactCacheIndices",
+  "firstDifferentCharacterIndex",
+  "graphBuildNameAnalysisCacheSnapshot",
+  "graphCurrentChapterId",
+  "graphHash",
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString",
+  "logCacheMiss",
+  "normalizeNameAnalysisCacheMatchText",
+  "padZero",
+  "readDialogCache",
+  "tryCacheItem",
+  "writeDialogCache"
+ ],
+ "firstDifferentCharacterIndex": [
+  "String"
+ ],
+ "collectExactCacheIndices": [
+  "String",
+  "normalizeNameAnalysisCacheMatchText"
+ ],
+ "logCacheMiss": [
+  "String",
+  "collectExactCacheIndices",
+  "firstDifferentCharacterIndex",
+  "graphBuildNameAnalysisCacheSnapshot",
+  "graphCurrentChapterId",
+  "graphHash",
+  "graphRemoteLog",
+  "graphSafeString",
+  "normalizeNameAnalysisCacheMatchText"
+ ],
+ "tryCacheItem": [
+  "String",
+  "graphCurrentChapterId",
+  "graphHash",
+  "graphSafeString",
+  "normalizeNameAnalysisCacheMatchText",
+  "padZero"
+ ],
+ "graphV907NormalizeGenderForVoice": [
+  "graphSafeString"
+ ],
+ "graphV907NormalizeAgeForVoice": [
+  "graphSafeString",
+  "graphV907NormalizeGenderForVoice"
+ ],
+ "graphV907VoiceSegmentKey": [
+  "graphV907NormalizeAgeForVoice",
+  "graphV907NormalizeGenderForVoice"
+ ],
+ "graphV907NormalizeVoiceAssignGenderAge": [
+  "graphV907NormalizeAgeForVoice",
+  "graphV907NormalizeGenderForVoice"
+ ],
+ "graphV907VoiceInfoByTag": [
+  "graphSafeString"
+ ],
+ "graphV907VoiceSegmentFromVoice": [
+  "graphV907VoiceInfoByTag",
+  "graphV907VoiceSegmentKey"
+ ],
+ "graphV907VoiceSegmentOfRecord": [
+  "graphV907VoiceSegmentFromVoice",
+  "graphV907VoiceSegmentKey"
+ ],
+ "graphV907IsMainRoleVoiceTag": [
+  "graphSafeString",
+  "graphV907VoiceInfoByTag"
+ ],
+ "graphV907FixedVoiceTagOfRecord": [
+  "graphSafeString"
+ ],
+ "graphV907IsFixedVoiceRecord": [
+  "Number",
+  "graphSafeString",
+  "graphV907FixedVoiceTagOfRecord",
+  "graphV907IsMainRoleVoiceTag"
+ ],
+ "graphV907MarkFixedVoiceRecord": [
+  "graphNowIso",
+  "graphSafeString",
+  "graphV907FixedVoiceTagOfRecord",
+  "graphV907VoiceSegmentOfRecord"
+ ],
+ "getTagName": [
+  "forceFlattenArray"
+ ],
+ "forceFlattenArray": [
+  "forceFlattenArray"
+ ],
+ "parseSoundKeywords": [
+  "parseInt"
+ ],
+ "handleText": [
+  "String",
+  "add",
+  "addAlias",
+  "addChapter",
+  "cleanDialogText",
+  "encodeURIComponent",
+  "escapeRegExp",
+  "extendNextContentEndPos",
+  "extendPrevContentStartPos",
+  "extractAllTagsFromFayinren",
+  "extractByRegex",
+  "forceFlattenArray",
+  "getCacheNarrationList",
+  "graphCurrentChapterId",
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphSetCurrentChapterKey",
+  "graphTrimChapterArray",
+  "graphV907AliasList",
+  "graphV907AliasTextFromRecords",
+  "graphV907ApplyGengxinPayloadToManager",
+  "graphV907BuildGengxinBookSwitchPayload",
+  "graphV907BuildRecordIndex",
+  "graphV907ChapterList",
+  "graphV907CountEmptyChapters",
+  "graphV907JsonClone",
+  "graphV907MergeExternalCharacterRecords",
+  "graphV907MergeOneExternalRecord",
+  "graphV907ParseGengxinPayload",
+  "graphV907RebuildVoiceUsage",
+  "graphV907RecordName",
+  "isArray",
+  "isSingleKeywordRepeat",
+  "matchNarrationFromCache",
+  "matchSingleLine"
+ ],
+ "graphV907RecordName": [
+  "graphNormalizeName"
+ ],
+ "graphV907AliasList": [
+  "String",
+  "add",
+  "graphNormalizeName"
+ ],
+ "graphV907AliasTextFromRecords": [
+  "add",
+  "graphNormalizeName",
+  "graphV907AliasList",
+  "graphV907RecordName"
+ ],
+ "graphV907ChapterList": [
+  "add",
+  "graphSafeString",
+  "graphTrimChapterArray"
+ ],
+ "graphV907BuildRecordIndex": [
+  "addAlias",
+  "graphNormalizeName",
+  "graphV907AliasList",
+  "graphV907RecordName"
+ ],
+ "graphV907RebuildVoiceUsage": [
+  "String"
+ ],
+ "graphV907MergeOneExternalRecord": [
+  "String",
+  "addChapter",
+  "graphSafeString",
+  "graphTrimChapterArray",
+  "graphV907AliasTextFromRecords",
+  "graphV907ChapterList",
+  "graphV907JsonClone"
+ ],
+ "addChapter": [
+  "graphSafeString"
+ ],
+ "graphV907MergeExternalCharacterRecords": [
+  "graphRemoteLog",
+  "graphTrimChapterArray",
+  "graphV907AliasList",
+  "graphV907BuildRecordIndex",
+  "graphV907ChapterList",
+  "graphV907CountEmptyChapters",
+  "graphV907JsonClone",
+  "graphV907MergeOneExternalRecord",
+  "graphV907RebuildVoiceUsage",
+  "graphV907RecordName"
+ ],
+ "graphV907BuildGengxinBookSwitchPayload": [
+  "String"
+ ],
+ "graphV907ParseGengxinPayload": [
+  "String",
+  "graphSafeString"
+ ],
+ "graphV907ApplyGengxinPayloadToManager": [
+  "String",
+  "graphCurrentChapterId",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphV907CountEmptyChapters",
+  "graphV907MergeExternalCharacterRecords",
+  "graphV907ParseGengxinPayload",
+  "graphV907RebuildVoiceUsage"
+ ],
+ "extractFayinrenPersonalityAuto": [
+  "String",
+  "extractAllTagsFromFayinren",
+  "extractByRegex",
+  "forceFlattenArray",
+  "isArray"
+ ],
+ "extractAllTagsFromFayinren": [
+  "String"
+ ],
+ "extractByRegex": [
+  "String"
+ ],
+ "v87BookKeyOfManager": [
+  "graphBookCacheSafeKey"
+ ],
+ "v87EnsureMergedRecordsBook": [
+  "graphBookCacheFile",
+  "graphReadJsonSafe",
+  "v87BookKeyOfManager"
+ ],
+ "v87EnsureRecordId": [
+  "graphHash",
+  "graphNormalizeName",
+  "graphNowIso",
+  "graphSafeString",
+  "v87BookKeyOfManager"
+ ],
+ "v87SplitAliasesString": [
+  "String",
+  "graphNormalizeName"
+ ],
+ "v87FindBoundMergeBackup": [
+  "graphNormalizeName",
+  "v87BookKeyOfManager",
+  "v87EnsureMergedRecordsBook",
+  "v87SplitAliasesString"
+ ],
+ "v87EvidenceLooksModelSummaryOnly": [
+  "graphSafeString"
+ ],
+ "v87NormalizeAuditSuggestions": [
+  "Number",
+  "graphNormalizeName",
+  "graphSafeString"
+ ],
+ "graphV87EvidenceLooksLikeModelSummary": [
+  "graphSafeString"
+ ],
+ "graphV87ReasonsHasAny": [
+  "graphReasonListHas"
+ ],
+ "graphV87SourceFamilies": [
+  "add",
+  "graphCleanSourceReasons",
+  "graphSafeString"
+ ],
+ "graphV87ExtractCompoundSourceReasons": [
+  "graphSafeString"
+ ],
+ "graphV87CompoundSourceStrongEnough": [
+  "graphV87ReasonsHasAny",
+  "graphV87SourceFamilies"
+ ],
+ "graphV87CertifiedCompoundSame": [
+  "graphArrayIntersectsChapters",
+  "graphCleanSourceReasons",
+  "graphCurrentChapterId",
+  "graphV87CompoundSourceStrongEnough",
+  "graphV87ExtractCompoundSourceReasons",
+  "graphV87ReasonsHasAny",
+  "graphV87SourceFamilies",
+  "graphV907ArrayUniqueSorted",
+  "graphV907PositiveSubtypeCompoundReasons"
+ ],
+ "graphV87CertifiedCompoundDifferent": [
+  "graphArrayIntersectsChapters",
+  "graphCleanSourceReasons",
+  "graphCurrentChapterId",
+  "graphV87CompoundSourceStrongEnough",
+  "graphV87ExtractCompoundSourceReasons",
+  "graphV87ReasonsHasAny",
+  "graphV87SourceFamilies"
+ ],
+ "weight": [
+  "Number",
+  "String",
+  "v87SplitAliasesString"
+ ],
+ "graphV87PositiveReasonCanMerge": [
+  "graphCurrentChapterId",
+  "graphNowIso",
+  "graphSafeString",
+  "graphV87CertifiedCompoundSame",
+  "graphV87IsLocalSingleClosedReason"
+ ],
+ "graphV87NegativeReasonCanSplit": [
+  "graphCurrentChapterId",
+  "graphNowIso",
+  "graphSafeString",
+  "graphV87CertifiedCompoundDifferent",
+  "graphV87IsLocalSingleClosedReason"
+ ],
+ "graphV87CleanHintReasonList": [
+  "graphSafeString"
+ ],
+ "graphV87CleanHintExtra": [
+  "graphSafeString"
+ ],
+ "cleanArr": [
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphV87CleanHintExtra",
+  "graphV87CleanHintReasonList"
+ ],
+ "graphV907CurrentBookKey": [
+  "graphBookCacheSafeKey"
+ ],
+ "graphV907NewVoiceAgeEvidenceCache": [
+  "graphNowIso",
+  "graphRuleDataVersion",
+  "graphV907CurrentBookKey"
+ ],
+ "graphV907NormalizeAnchorText": [
+  "String"
+ ],
+ "graphV907TextContainsAnchor": [
+  "graphV907NormalizeAnchorText"
+ ],
+ "graphV907ContextWindowAround": [
+  "String",
+  "graphSafeString",
+  "graphV907NormalizeAnchorText",
+  "parseInt"
+ ],
+ "graphV907NormalizeVoiceAgeStage": [
+  "graphSafeString",
+  "graphV907NormalizeGenderForVoice"
+ ],
+ "graphV907SubjectMatches": [
+  "graphNormalizeName"
+ ],
+ "graphV907UniqueStringArray": [
+  "graphSafeString"
+ ],
+ "graphV907SameStringSet": [
+  "graphV907UniqueStringArray"
+ ],
+ "graphV907FindRecordByIdOrName": [
+  "graphSafeString"
+ ],
+ "parseResponse": [
+  "String",
+  "graphRemoteLog",
+  "graphSafeString",
+  "graphV907NormalizeAliasModule",
+  "graphV907NormalizeVoiceAgeAuditResult"
+ ],
+ "graphV907VoiceAgeScheduleSeqsV907": [
+  "graphV907UniqueStringArray"
+ ],
+ "graphV907ExpandVoiceAgeEvidenceForSeqV907": [
+  "graphSafeString",
+  "graphV907Clone"
+ ],
+ "graphV907VoiceAgeCandidateSetId": [
+  "graphHash",
+  "graphSafeString"
+ ],
+ "buildVoiceAgeSparseAuditSchemaPrompt": [
+  "graphV907VoiceAgeCandidateSetId"
+ ],
+ "graphV907NormalizeVoiceAgeAuditResult": [
+  "Number",
+  "String",
+  "applyExceptions",
+  "fail",
+  "graphSafeString",
+  "graphV907Clone",
+  "graphV907VoiceAgeAllAcceptedVerificationOk",
+  "graphV907VoiceAgeCandidateSetId"
+ ],
+ "applyExceptions": [
+  "graphSafeString",
+  "graphV907Clone"
+ ],
+ "buildRequest": [
+  "graphRemoteLog",
+  "graphSafeString"
+ ],
+ "graphV907NormalizeAliasModule": [
+  "Number",
+  "graphNormalizeName",
+  "graphSafeString",
+  "graphV907HasOwn",
+  "graphV907NotApplicableModule"
+ ],
+ "graphV907NormalizeVoiceAgeModule": [
+  "graphV907NormalizeVoiceAgeAuditResult",
+  "graphV907NotApplicableModule"
+ ],
+ "graphV907NormalizeGraphModule": [
+  "graphNormalizeSparseRelationAuditResult",
+  "graphV907NotApplicableModule"
+ ],
+ "graphV907BuildCombinedAuditStatus": [
+  "graphV907NormalizeAliasModule",
+  "graphV907NormalizeGraphModule",
+  "graphV907NormalizeVoiceAgeModule"
+ ],
+ "graphV907CombinedStatusLogPayload": [
+  "Number",
+  "graphNormalizeName",
+  "graphV907BuildCombinedAuditStatus",
+  "item"
+ ],
+ "graphV907SelectBestCombinedResult": [
+  "graphV907BuildCombinedAuditStatus",
+  "graphV907HasOwn"
+ ],
+ "graphV907CombinedMaxRetryRound": [
+  "parseInt"
+ ],
+ "graphV907BuildCombinedSharedSourceBlock": [
+  "String"
+ ],
+ "graphV907LogVoiceAgeSparseApply": [
+  "graphRemoteLog",
+  "graphV907Clone",
+  "graphV907NewVoiceAgeSparseApplySummary"
+ ],
+ "graphV907ApplyVoiceAgeConflictGuard": [
+  "Number"
+ ],
+ "setFixedVoice": [
+  "graphV907MarkFixedVoiceRecord"
+ ],
+ "cancelFixedVoice": [
+  "graphNormalizeName",
+  "graphRemoteLog",
+  "graphV907CancelFixedVoiceRecord",
+  "graphV907FixedVoiceTagOfRecord"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "book_test_id": "PRIVATE_REALBOOK_001",
+ "title": "《娱乐：从1990年开始》",
+ "author_candidate": "咖啡香草",
+ "source_hash_prefix": "6150b721cc8015a8",
+ "size_bytes": 2972771,
+ "line_count": 36948,
+ "quote_dialogue_candidates": 13793,
+ "speech_cue_candidates": 9526,
+ "kinship_line_candidates": 1528,
+ "temp_voice_trigger_candidates": 15,
+ "blank_line_count": 342,
+ "note": "全部为 candidate 统计，非 ground truth（§115）；仅供 Hard Case 提取与 TASK-060/070 数据准备",
+ "status": "REALBOOK_OBSERVED_PENDING_AUDIT"
+}

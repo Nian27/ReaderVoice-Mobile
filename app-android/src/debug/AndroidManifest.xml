@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <!-- Debug-only ADB entry point for the isolated Director runtime gate. -->
+        <activity
+            android:name=".DirectorM1GateActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <!-- Debug-only ReaderDirector visual test bench (M2 first freeze). -->
+        <activity
+            android:name=".ReaderDirectorDebugActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <!-- Debug-only ADB entry point for the CosyVoice M2 probe. -->
+        <activity
+            android:name=".CosyVoiceM2ProbeActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+    </application>
+</manifest>

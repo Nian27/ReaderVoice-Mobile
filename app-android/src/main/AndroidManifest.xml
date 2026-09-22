@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Expose the vendor OpenCL driver to this app's linker namespace. The SEP-build
+         libMNN_CL.so dlopens /vendor/lib64/libOpenCL.so at runtime; without this the app
+         classloader namespace (clns-*) denies /vendor access and flow(opencl) returns rc=5.
+         required=false keeps non-Adreno devices safe. -->
+        <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="false"
+        android:label="ReaderVoice"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <uses-native-library android:name="libOpenCL.so" android:required="false" />
+        <uses-native-library android:name="libcdsprpc.so" android:required="false" />
+        <service
+            android:name=".VoiceDesignService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+        <!-- 整章运行宿主：前台服务，避免 Activity 进后台被 cached-app freezer 冻结 -->
+        <service
+            android:name=".ChapterDirectorService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+        <activity android:name=".ChapterListActivity" android:exported="false" />
+        <activity
+            android:name=".CosyVoiceM2ProbeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VoiceDesignActivity"
+            android:exported="true"
+            android:label="VoiceDesign" />
+        <!-- 调试页不再占用 launcher；产品入口还给书架（MainActivity）。
+             exported=true 以便 adb 直接拉起（debug 工具链依赖）。 -->
+        <activity android:name=".ReaderDirectorDebugActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- MOBILE-005 / M1 Gate 工具：设备端段落化 dump（debug-only） -->
+        <activity android:name=".ParagraphParityActivity" android:exported="true" />
+        <activity android:name=".SemanticParityActivity" android:exported="true" />
+        <activity android:name=".ChapterDirectorActivity" android:exported="true" />
+        <activity android:name=".ScriptViewActivity" android:exported="false" />
+        <activity android:name=".ChapterRulesActivity" android:exported="false" />
+        <activity android:name=".ReaderActivity" android:exported="false" />
+        <activity android:name=".CharacterManagerActivity" android:exported="false" />
+    </application>
+</manifest>
+
+
